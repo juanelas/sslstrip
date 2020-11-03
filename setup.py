@@ -10,12 +10,12 @@ setup  (name        = 'sslstrip',
         description = 'A MITM tool that implements Moxie Marlinspike\'s HTTPS stripping attacks.',
         author = 'Moxie Marlinspike',
         author_email = 'moxie@thoughtcrime.org',
-        url = 'http://www.thoughtcrime.org/software/sslstrip/',
+        url = 'https://github.com/juanelas/sslstrip',
         license = 'GPL',
         packages  = ["sslstrip"],
         package_dir = {'sslstrip' : 'sslstrip/'},
         scripts = ['sslstrip/sslstrip'],
-        data_files = [('share/sslstrip', ['README', 'COPYING', 'lock.ico'])],
+        data_files = [('share/sslstrip', ['README.md', 'COPYING', 'lock.ico'])],
        )
 
 print "Cleaning up..."
