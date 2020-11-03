@@ -29,11 +29,10 @@ cd sslstrip
 sudo python setup.py install
 ```
 
-> If you'd rather not install `sslstrip`, you can always run it from source by just typing `python sslstrip.py` and then the rest of options (see Usage below)
+> If you'd rather not install `sslstrip`, you can always run `sslstrip` from the source base by just typing `python sslstrip.py` and then the rest of options (see Usage below)
 
 ## Usage
 
-sslstrip can be run from the source base without installation.
 Just run `sslstrip -h` as a non-root user to get the  command-line options.
 
 ```text
@@ -51,7 +50,7 @@ Options:
 -h                                Print this help message.
 ```
 
-The four steps to getting this working (assuming you're running Linux) are:
+The six steps to getting this working (assuming you're running Linux) are:
 
 1) Flip your machine into forwarding mode (as root).
 
@@ -73,4 +72,4 @@ The four steps to getting this working (assuming you're running Linux) are:
 
    > `arpspoof` is part of the `dsniff` suite. In Debian-like distros you can install it with `apt update && apt install dsniff`
 
-5) Start a network sniffer (e.g. wireshark, tcpdump) or directly look for HTTP posts in the sslstrip log file (`sslstrip.log` by default)
+6) Start a network sniffer (e.g. wireshark, tcpdump) or directly look for HTTP posts in the sslstrip log file (`sslstrip.log` by default)
