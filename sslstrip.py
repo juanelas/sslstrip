@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# -*- coding: utf8 -*-
 """sslstrip is a MITM tool that implements Moxie Marlinspike's SSL stripping attacks."""
  
 __author__ = "Moxie Marlinspike"
@@ -33,10 +33,10 @@ from sslstrip.CookieCleaner import CookieCleaner
 
 import sys, getopt, logging, traceback, string, os
 
-gVersion = "0.9"
+gVersion = "0.9.1"
 
 def usage():
-    print "\nsslstrip " + gVersion + " by Moxie Marlinspike"
+    print "\nsslstrip " + gVersion + " by Moxie Marlinspike (patched by Juan Hernández Serrano)"
     print "Usage: sslstrip <options>\n"
     print "Options:"
     print "-w <filename>, --write=<filename> Specify file to log to (optional)."
