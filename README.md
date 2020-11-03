@@ -36,7 +36,7 @@ sudo python setup.py install
 sslstrip can be run from the source base without installation.
 Just run `sslstrip -h` as a non-root user to get the  command-line options.
 
-```
+```text
 sslstrip 0.9.1 by Moxie Marlinspike (patched by Juan Hernández Serrano)
 Usage: sslstrip <options>
 
