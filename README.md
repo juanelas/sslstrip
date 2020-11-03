@@ -57,6 +57,8 @@ The four steps to getting this working (assuming you're running Linux) are:
 
    `echo "1" > /proc/sys/net/ipv4/ip_forward`
 
+   > If you want to make this change persist after reboot, in Debian-like distros just uncomment `net.ipv4.ip_forward=1` in `/etc/sysctl.conf` and reload it with `sudo sysctl -p`
+
 2) Run the sslstrip transparent proxy listening at port `<yourListenPort>`
 
    `sslstrip -l <yourListenPort>`
