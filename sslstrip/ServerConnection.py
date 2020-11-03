@@ -152,7 +152,7 @@ class ServerConnection(HTTPClient):
     def shutdown(self):
         if not self.shutdownComplete:
             self.shutdownComplete = True
-            if not self.client.finished:
+            if not self.client._disconnected:
                 self.client.finish()
             self.transport.loseConnection()
 
