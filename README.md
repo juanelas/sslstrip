@@ -58,7 +58,7 @@ The six steps to getting this working (assuming you're running Linux) are:
    $ sudo echo "1" > /proc/sys/net/ipv4/ip_forward
    ```
 
-   > If you want to make this change persist after reboot, in Debian-like distros just rather comment `net.ipv4.ip_forward=1` in `/etc/sysctl.conf` and reload it with 
+   > If you want to make this change persist after reboot, in Debian-like distros you could better uncomment `net.ipv4.ip_forward=1` in `/etc/sysctl.conf` and reload it with:
    >```console
    >$ sudo sysctl -p
    >```
