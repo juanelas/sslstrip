@@ -33,10 +33,10 @@ $ sudo python setup.py install
 
 ## Usage
 
-Just run `sslstrip -h` as a non-root user to get the  command-line options.
+Just run `sslstrip -h` as a non-root user to get the command-line options.
 
 ```text
-sslstrip 0.9.1 by Moxie Marlinspike (patched by Juan Hernández Serrano)
+sslstrip 0.9.1
 Usage: sslstrip <options>
 
 Options:

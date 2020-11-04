@@ -36,7 +36,7 @@ import sys, getopt, logging, traceback, string, os
 gVersion = "0.9.1"
 
 def usage():
-    print "\nsslstrip " + gVersion + " by Moxie Marlinspike (patched by Juan Hernández Serrano)"
+    print "\nsslstrip " + gVersion
     print "Usage: sslstrip <options>\n"
     print "Options:"
     print "-w <filename>, --write=<filename> Specify file to log to (optional). Default is sslstrip.log"
