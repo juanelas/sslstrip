@@ -40,7 +40,7 @@ sslstrip 0.9.1 by Moxie Marlinspike (patched by Juan Hernández Serrano)
 Usage: sslstrip <options>
 
 Options:
--w <filename>, --write=<filename> Specify file to log to (optional).
+-w <filename>, --write=<filename> Specify file to log to (optional). Default is sslstrip.log
 -p , --post                       Log only SSL POSTs. (default)
 -s , --ssl                        Log all SSL traffic to and from server.
 -a , --all                        Log all SSL and HTTP traffic to and from server.
@@ -63,7 +63,7 @@ The six steps to getting this working (assuming you're running Linux) are:
    >$ sudo sysctl -p
    >```
 
-2) Run the sslstrip transparent proxy listening at port `<yourListenPort>` (if the `-l` option is ommitted, `sslstrip` will listen on port `10000`)
+2) Run the sslstrip transparent proxy listening at port `<yourListenPort>` (if the `-l` option is omitted, `sslstrip` will listen on port `10000`)
 
    ```console
    $ sslstrip -l <yourListenPort>
