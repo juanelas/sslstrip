@@ -39,7 +39,7 @@ def usage():
     print "\nsslstrip " + gVersion
     print "Usage: sslstrip <options>\n"
     print "Options:"
-    print "-w <filename>, --write=<filename> Specify file to log to (optional). Default is sslstrip.log"
+    print "-w <filename>, --write=<filename> Specify file to log to (default sslstrip.log)"
     print "-p , --post                       Log only SSL POSTs. (default)"
     print "-s , --ssl                        Log all SSL traffic to and from server."
     print "-a , --all                        Log all SSL and HTTP traffic to and from server."

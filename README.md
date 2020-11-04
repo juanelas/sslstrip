@@ -40,7 +40,7 @@ sslstrip 0.9.1
 Usage: sslstrip <options>
 
 Options:
--w <filename>, --write=<filename> Specify file to log to (optional). Default is sslstrip.log
+-w <filename>, --write=<filename> Specify file to log to (default sslstrip.log)
 -p , --post                       Log only SSL POSTs. (default)
 -s , --ssl                        Log all SSL traffic to and from server.
 -a , --all                        Log all SSL and HTTP traffic to and from server.
