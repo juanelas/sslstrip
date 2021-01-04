@@ -13,6 +13,7 @@ If you don't have `pip` for python 2 already installed, you can install it (besi
 ```console
 $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 $ sudo python get-pip.py
+$ pip install --upgrade setuptools
 ```
 
 Now you can install the python 2 module dependencies with:
